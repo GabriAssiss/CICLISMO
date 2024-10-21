@@ -6,17 +6,17 @@ public class Main {
         Hora h1 = new Hora(12, 0, 0);
         Duracao d1 = new Duracao(h1, 120);
         Duracao d2 = new Duracao(h1, 150);
-        Etapa t1 = new Etapa(1, d1);
-        Etapa t2 = new Etapa(2, d1);
-        Etapa t3 = new Etapa(2, d2);
+        Etapa t1 = new Etapa(1);
+        Etapa t2 = new Etapa(2);
+        Etapa t3 = new Etapa(2);
 
         Etapa[] etapas = new Etapa[]{t1, t2, t3};
         Hora h4 = new Hora(12, 0, 0);
         Duracao d4 = new Duracao(h1, 120);
         Duracao d5 = new Duracao(h1, 160);
-        Etapa t4 = new Etapa(1, d4);
-        Etapa t5 = new Etapa(2, d4);
-        Etapa t6 = new Etapa(2, d5);
+        Etapa t4 = new Etapa(1);
+        Etapa t5 = new Etapa(2);
+        Etapa t6 = new Etapa(2);
 
         Etapa[] etapas2 = new Etapa[]{t4, t5, t6};
 
