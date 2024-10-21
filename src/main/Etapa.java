@@ -5,7 +5,7 @@ public class Etapa {
     private final Duracao duracaoEtapa;
     private final static int MAXIMOETAPA = 21;
 
-    public Etapa(int numeroEtapa){
+    public Etapa(int numeroEtapa, Duracao duracaoEtapa){
         if(numeroEtapa >= 1 && numeroEtapa < MAXIMOETAPA + 1 ) {
             this.NUMEROETAPA = numeroEtapa;
             this.duracaoEtapa = duracaoEtapa;
