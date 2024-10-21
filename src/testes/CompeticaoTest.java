@@ -1,9 +1,6 @@
 package testes;
 
-import main.Ciclista;
-import main.Competicao;
-import main.Data;
-import main.Etapa;
+import main.*;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -11,11 +8,13 @@ import static org.junit.jupiter.api.Assertions.*;
 class CompeticaoTest {
     @Test
     public void testDiferencaCiclista() {
-        Etapa[] etapas = {new Etapa(100), new Etapa(200)};
+        Hora hora1 = new Hora(13, 0, 0);
+        Duracao d1 = new Duracao(hora1, 100);
+        Etapa[] etapas = {new Etapa(21, d1), new Etapa(10, d1)};
         Ciclista ciclista1 = new Ciclista(1, "João", "São Paulo", etapas);
         Ciclista ciclista2 = new Ciclista(2, "Pedro", "Rio de Janeiro", etapas);
 
-        Data dataCompeticao = new Data(2024, 10, 20);
+        Data dataCompeticao = new Data(20, 10, 2024);
         Ciclista[] participantes = {ciclista1, ciclista2};
         Competicao competicao = new Competicao(dataCompeticao, 1, participantes);
 
