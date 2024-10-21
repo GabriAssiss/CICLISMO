@@ -15,8 +15,8 @@ public class Competicao {
     public String vencedorEtapa(Ciclista ciclista1, Ciclista ciclista2, Etapa et1){
         Duracao duracaoEtapac1 = ciclista1.duracaoEtapa(et1);
         Duracao duracaoEtapac2 = ciclista2.duracaoEtapa(et1);
-        if(duracaoEtapac1.maiorQue(duracaoEtapac2)) return "O ciclista 1 fez a etapa mais rápido que o 2";
-        else if (duracaoEtapac2.maiorQue(duracaoEtapac1)) return "O ciclista 2 fez a etapa mais rápido que o 1";
+        if(duracaoEtapac1.maiorQue(duracaoEtapac2)) return "O ciclista 2 fez a etapa mais rápido que o 1";
+        else if (duracaoEtapac2.maiorQue(duracaoEtapac1)) return "O ciclista 1 fez a etapa mais rápido que o 2";
         else return "Ambos fizeram a etapa no mesmo período de tempo";
     }
     public String diferencaCiclista(Ciclista ciclista1, Ciclista ciclista2){
